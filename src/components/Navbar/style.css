@@ -1,0 +1,62 @@
+.logo {
+  width: 60px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.dark-section {
+  background-color: #1b262c;
+}
+
+.white-section {
+  background-color: #bbe1fa;
+}
+
+.dar-text {
+  color: #1b262c;
+}
+
+.light-text {
+  color: #bbe1fa;
+}
+
+.margin-left {
+  margin-left: 1.25rem;
+}
+
+.savenotes {
+  font-family: "Jost", sans-serif;
+}
+
+.savenotes-brand {
+  margin-left: 0.5rem;
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+
+.savenotes-brand:hover {
+  color: #26b388;
+}
+
+/* Navigation Bar Menu */
+.navbar-toggler {
+  color: #1b262c;
+}
+
+.navbar-nav {
+  margin-left: auto;
+  margin-right: 0.625rem;
+}
+
+.navbar-item {
+  font-size: 1rem;
+  margin-right: 0.625rem;
+}
+
+.nav-link {
+  color: #bbe1fa !important;
+}
+
+.nav-link:hover {
+  color: #26b388 !important;
+}
