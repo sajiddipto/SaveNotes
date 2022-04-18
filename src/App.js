@@ -4,6 +4,7 @@ import Home from "./components/Home/Home";
 import SaveNotes from "./components/SaveNotes/SaveNotes";
 import Auth from "./components/Auth/Auth";
 import Contacts from "./components/Contacts/Contacts";
+import About from "./components/About/About";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
           <Route path="/" exact component={Home} />
           <Route path="/home" component={Home} />
           <Route path="/contacts" component={Contacts} />
+          <Route path="/about" component={About} />
           <Route path="/savenotes" component={SaveNotes} />
           <Route path="/auth" exact component={Auth} />
         </Switch>
