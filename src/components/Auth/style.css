@@ -1,0 +1,90 @@
+body {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1190%26quot%3b)' fill='none'%3e%3cpath d='M301.6590287604576 497.3409586658157L426.62630132425255 406.5469205393811 335.83226319781795 281.57964797558617 210.864990634023 372.37368610202077z' fill='rgba(27%2c 38%2c 44%2c 0.24)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M213.0067369699085 222.83844788143804L223.4353597237304 123.61673024597793 124.21364208827026 113.18810749215606 113.78501933444839 212.40982512761616z' fill='rgba(27%2c 38%2c 44%2c 0.24)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M626.0359973430218 410.51512399939224L692.023379367727 512.3390982181836 741.8187540904663 418.68761912528987z' fill='rgba(27%2c 38%2c 44%2c 0.24)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M496.4791152768713 541.7412775550914L406.0001838650747 480.7124677230329 344.97137403301616 571.1913991348295 435.4503054448128 632.220208966888z' fill='rgba(27%2c 38%2c 44%2c 0.24)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M961.5507962407944 169.6675763294972L906.8939360973452 253.65641544260328 994.2774707635415 259.7668674381656z' fill='rgba(27%2c 38%2c 44%2c 0.24)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M654.3442893774109 206.09710005611066L620.0533268727633 100.56036928166279 514.5165960983154 134.85133178631042 548.807558602963 240.3880625607583z' fill='rgba(27%2c 38%2c 44%2c 0.24)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1202.1 276.43 a149.44 149.44 0 1 0 298.88 0 a149.44 149.44 0 1 0 -298.88 0z' fill='rgba(27%2c 38%2c 44%2c 0.24)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M867.3079477309541 443.23547166625053L796.6213184406026 395.5567381830252 748.9425849573773 466.24336747337657 819.6292142477288 513.922100956602z' fill='rgba(27%2c 38%2c 44%2c 0.24)' class='triangle-float2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1190'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+  font-family: "Jost", sans-serif;
+}
+span {
+  font-size: 14px;
+}
+
+.form-control {
+  border-color: #bbe1fa;
+  width: 100%;
+  min-height: 41px;
+  box-shadow: none !important;
+}
+.form-control:focus {
+  border-color: #1b262c;
+}
+.form-control,
+.btn {
+  border-radius: 3px;
+}
+.signup-form {
+  width: 500px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+.signup-form h2 {
+  color: #1b262c;
+  margin: 0 0 30px 0;
+  display: inline-block;
+  padding: 0 30px 10px 0;
+  border-bottom: 3px solid #bbe1fa;
+}
+.signup-form form {
+  color: #1b262c;
+  height: auto;
+  border-radius: 7px;
+  margin-bottom: 15px;
+  background: #fff;
+  box-shadow: #1b262c;
+  padding: 30px;
+}
+.signup-form .form-group {
+  color: #1b262c;
+  margin-bottom: 20px;
+}
+.signup-form label {
+  border: #1b262c;
+  font-weight: normal;
+  font-size: 15px;
+}
+.signup-form input[type="checkbox"] {
+  margin-top: 2px;
+}
+.signup-form .btn {
+  font-size: 16px;
+  font-weight: normal;
+  color: #bbe1fa;
+  background: #1b262c;
+  border: none;
+  margin-top: 5px;
+  min-width: 140px;
+}
+.signup-form .btn:hover,
+.signup-form .btn:focus {
+  color: #1b262c;
+  background: #bbe1fa;
+  outline: none !important;
+}
+.signup-form a {
+  color: #52b8cc;
+  text-decoration: underline;
+}
+.signup-form a:hover {
+  color: #1b262c;
+  text-decoration: none;
+}
+.signup-form form a {
+  color: #5cd3b4;
+  text-decoration: none;
+}
+.signup-form form a:hover {
+  text-decoration: none;
+}
+.text-center {
+  margin-top: 30px;
+}
+.switch {
+  margin-bottom: 0px;
+}

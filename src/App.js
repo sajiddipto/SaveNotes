@@ -1,31 +1,25 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Navbar from "./components/Navbar/Navbar";
-import Form from "./components/Form/Form";
-import Posts from "./components/Posts/Posts";
-import { getPosts } from "./actions/posts";
-import { useDispatch } from "react-redux";
+import Home from "./components/Home/Home";
+import SaveNotes from "./components/SaveNotes/SaveNotes";
+import Auth from "./components/Auth/Auth";
+import Contacts from "./components/Contacts/Contacts";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 const App = () => {
-  const [currentId, setCurrentId] = useState(null);
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(getPosts());
-  }, [currentId, dispatch]);
-
   return (
-    <div>
-      <Navbar />
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-6">
-            <Posts setCurrentId={setCurrentId} />
-          </div>
-          <div class="col-lg-6">
-            <Form currentId={currentId} setCurrentId={setCurrentId} />
-          </div>
-        </div>
+    <BrowserRouter>
+      <div>
+        <Navbar />
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/home" component={Home} />
+          <Route path="/contacts" component={Contacts} />
+          <Route path="/savenotes" component={SaveNotes} />
+          <Route path="/auth" exact component={Auth} />
+        </Switch>
       </div>
-    </div>
+    </BrowserRouter>
   );
 };
 
