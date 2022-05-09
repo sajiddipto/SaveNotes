@@ -7,6 +7,7 @@ import { useHistory, useLocation } from "react-router-dom";
 import Toolbar from "@mui/material/Toolbar";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import decode from "jwt-decode";
 
 const Navbar = () => {
   const [user, setUser] = useState(JSON.parse(localStorage.getItem("profile")));
@@ -21,6 +22,12 @@ const Navbar = () => {
 
   useEffect(() => {
     const token = user?.token;
+
+    if (token) {
+      const decodedToken = decode(token);
+
+      if (decodedToken.exp * 1000 < new Date().getTime()) logout();
+    }
 
     setUser(JSON.parse(localStorage.getItem("profile")));
   }, [location]);

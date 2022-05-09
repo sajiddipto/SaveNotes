@@ -1,0 +1,20 @@
+h1 {
+  font-size: 5rem;
+  padding-top: 3rem;
+}
+
+.get-stared {
+  padding: 3% 15% 5%;
+}
+
+.btn {
+  color: #1b262c;
+  background-color: #bbe1fa;
+  margin-top: 1.25rem;
+  border-style: none;
+}
+
+.first_image {
+  width: 90%;
+  height: auto;
+}

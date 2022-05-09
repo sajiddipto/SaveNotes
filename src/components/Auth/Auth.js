@@ -3,13 +3,30 @@ import { GoogleLogin } from "react-google-login";
 import "./style.css";
 import { useDispatch } from "react-redux";
 import { useHistory } from "react-router-dom";
+import { signin, signup } from "../../actions/auth";
+
+const initialState = { name: "", email: "", password: "", confirmPassword: "" };
 
 const Auth = () => {
   const [isSignup, setIsSignup] = useState(false);
+  const [formData, setFormData] = useState(initialState);
   const dispatch = useDispatch();
   const history = useHistory();
-  const handleSubmit = () => {};
-  const handleChange = () => {};
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (isSignup) {
+      dispatch(signup(formData, history));
+    } else {
+      dispatch(signin(formData, history));
+    }
+    console.log(formData);
+  };
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
   const switchMode = () => {
     setIsSignup((prevIsSignup) => !prevIsSignup);
   };
@@ -50,7 +67,8 @@ const Auth = () => {
                       name="name"
                       required="required"
                       autoComplete="off"
-                      handleChange={handleChange}
+                      value={formData.name}
+                      onChange={handleChange}
                     />
                   </div>
                 </div>
@@ -65,7 +83,8 @@ const Auth = () => {
                   name="email"
                   required="required"
                   autoComplete="off"
-                  handleChange={handleChange}
+                  value={formData.email}
+                  onChange={handleChange}
                 />
               </div>
             </div>
@@ -78,7 +97,8 @@ const Auth = () => {
                   className="form-control"
                   required="required"
                   autoComplete="new-password"
-                  handleChange={handleChange}
+                  value={formData.password}
+                  onChange={handleChange}
                 />
               </div>
             </div>
@@ -94,7 +114,8 @@ const Auth = () => {
                     className="form-control"
                     required="required"
                     autoComplete="new-password"
-                    handleChange={handleChange}
+                    value={formData.confirmPassword}
+                    onChange={handleChange}
                   />
                 </div>
               </div>
